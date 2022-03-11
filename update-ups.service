@@ -1,0 +1,10 @@
+[Unit]
+Description=Update UPS
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/update-ups
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+UPS_PATH=/org/freedesktop/UPower/devices/ups_hiddev0
+busctl call --system org.freedesktop.UPower $UPS_PATH org.freedesktop.UPower.Device Refresh

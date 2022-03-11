@@ -1,0 +1,9 @@
+[Unit]
+Description=Updates UPS status every 6 seconds
+
+[Timer]
+OnActiveSec=0s
+OnUnitInactiveSec=6s
+
+[Install]
+WantedBy=timers.target
